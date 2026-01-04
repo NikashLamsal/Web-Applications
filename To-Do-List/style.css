@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1f2937, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todolist-container {
+    width: 100%;
+    max-width: 480px;
+    background: #0b1220;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+
+.todolist-container h2 {
+    color: #e5e7eb;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+
+.box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+#input-box {
+    flex: 1;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #e5e7eb;
+    font-size: 14px;
+    outline: none;
+}
+
+#input-box::placeholder {
+    color: #64748b;
+}
+
+#input-box:focus {
+    border-color: #6366f1;
+    background: #3c3b4d;
+
+}
+
+
+.btn {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+#list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#list li {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 14px;
+    transition: background 0.25s ease, border 0.25s ease;
+}
+
+#list li:hover {
+    background: #1d2754;
+    border-color: #4781d3;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+
+#list li button {
+    background: transparent;
+    border: none;
+    color: #f87171;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#list li button:hover {
+    background: rgba(248, 113, 113, 0.15);
+    color: #fecaca;
+}
+
+
+#list li span {
+    color: #e5e7eb;      
+    font-size: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #94a3b8;       
+}
